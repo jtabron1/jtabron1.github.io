@@ -96,7 +96,7 @@ export default function Projects() {
         <h2 className="text-3xl font-semibold tracking-tighter md:text-5xl">
           AI-powered GRC automation projects
         </h2>
-        <p className="mt-4 max-w-[60ch] text-muted">
+        <p className="mt-4 max-w-[60ch] text-lg text-muted">
           Agents that turn SOC 2 controls into running code.
         </p>
       </Reveal>
@@ -113,8 +113,8 @@ export default function Projects() {
             >
               <CriteriaTags criteria={p.criteria} />
               <h3 className="mt-6 text-2xl font-semibold tracking-tight">{p.title}</h3>
-              <p className="mt-4 leading-relaxed text-muted">{p.description}</p>
-              <p className="mt-4 font-medium">{p.impact}</p>
+              <p className="mt-4 text-lg leading-relaxed text-muted">{p.description}</p>
+              <p className="mt-4 text-lg font-medium">{p.impact}</p>
               <div className="mt-auto">
                 <VideoFrame videoId={p.videoId} title={p.title} />
                 {p.href && (
@@ -137,8 +137,8 @@ export default function Projects() {
             >
               <CriteriaTags criteria={p.criteria} />
               <h3 className="mt-6 text-2xl font-semibold tracking-tight">{p.title}</h3>
-              <p className="mt-4 leading-relaxed text-muted">{p.description}</p>
-              <p className="mt-4 font-medium">{p.impact}</p>
+              <p className="mt-4 text-lg leading-relaxed text-muted">{p.description}</p>
+              <p className="mt-4 text-lg font-medium">{p.impact}</p>
               <ProjectLink />
             </a>
           </Reveal>

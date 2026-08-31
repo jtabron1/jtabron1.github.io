@@ -24,13 +24,13 @@ export default function Speaking() {
             <h2 className="mt-4 max-w-[24ch] text-3xl font-semibold tracking-tighter md:text-5xl">
               AI-Powered GRC: Scaling Risk &amp; Compliance With Intelligent Agents
             </h2>
-            <p className="mt-6 max-w-[58ch] leading-relaxed text-muted">
+            <p className="mt-6 max-w-[58ch] text-lg leading-relaxed text-muted">
               A session for risk, compliance, security, and audit professionals on
               using agent-based automation to eliminate manual GRC bottlenecks, with
               real examples spanning the GRC lifecycle: risk assessment, change
               management, contract review, and sales enablement.
             </p>
-            <p className="mt-4 max-w-[58ch] leading-relaxed text-muted">
+            <p className="mt-4 max-w-[58ch] text-lg leading-relaxed text-muted">
               Attendees left with a practical view of where AI agents deliver the
               most value in GRC today, and how to begin applying them in their own
               programs.

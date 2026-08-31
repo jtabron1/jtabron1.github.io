@@ -9,7 +9,7 @@ export default function Contact() {
           <h2 className="max-w-[18ch] text-4xl font-semibold tracking-tighter md:text-6xl">
             Let's build something amazing together.
           </h2>
-          <p className="mt-5 max-w-[55ch] text-muted md:text-lg">
+          <p className="mt-5 max-w-[55ch] text-lg text-muted md:text-xl">
             Open to conversations about GRC engineering, compliance automation, and
             security leadership.
           </p>

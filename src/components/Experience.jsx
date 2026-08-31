@@ -124,7 +124,7 @@ export default function Experience() {
                   </h3>
                   <div className="mt-3 max-w-[75ch] space-y-2">
                     {r.highlights.map((h) => (
-                      <p key={h} className="leading-relaxed text-muted">
+                      <p key={h} className="text-lg leading-relaxed text-muted">
                         {h}
                       </p>
                     ))}
@@ -171,7 +171,7 @@ export default function Experience() {
                 <p className="font-mono text-xs text-muted">{r.dates}</p>
                 <h4 className="mt-2 font-semibold tracking-tight">{r.role}</h4>
                 <p className="text-sm text-accent">{r.company}</p>
-                <p className="mt-3 text-sm leading-relaxed text-muted">{r.note}</p>
+                <p className="mt-3 leading-relaxed text-muted">{r.note}</p>
               </div>
             ))}
           </div>

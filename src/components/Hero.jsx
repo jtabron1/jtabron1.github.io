@@ -14,12 +14,12 @@ export default function Hero() {
 
   return (
     <section id="top">
-      <div className="mx-auto flex min-h-[100dvh] max-w-7xl items-center px-4 pt-16 sm:px-8">
+      <div className="mx-auto flex min-h-[75dvh] max-w-7xl items-center px-4 pt-16 sm:px-8">
       <div className="grid w-full items-center gap-12 py-12 lg:grid-cols-12 lg:gap-8">
         <div className="lg:col-span-7">
           <motion.p
             {...fadeUp(0)}
-            className="font-mono text-xs uppercase tracking-[0.18em] text-accent"
+            className="font-mono text-base uppercase tracking-[0.18em] text-accent"
           >
             James Tabron · GRC Engineering Leader
           </motion.p>
@@ -31,7 +31,7 @@ export default function Hero() {
           </motion.h1>
           <motion.p
             {...fadeUp(0.16)}
-            className="mt-6 max-w-[52ch] text-base leading-relaxed text-muted md:text-lg"
+            className="mt-6 max-w-[52ch] text-lg leading-relaxed text-muted md:text-xl"
           >
             A CISSP-certified leader who offers a rare combination of deep GRC
             expertise with large scale engineering leadership and AI-Powered

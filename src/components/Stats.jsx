@@ -21,7 +21,7 @@ export default function Stats() {
                 <dd className="font-mono text-3xl font-medium tracking-tight text-accent md:text-4xl">
                   {s.value}
                 </dd>
-                <dt className="mt-2 text-sm leading-snug text-muted">{s.label}</dt>
+                <dt className="mt-2 text-base leading-snug text-muted">{s.label}</dt>
               </div>
             ))}
           </dl>
