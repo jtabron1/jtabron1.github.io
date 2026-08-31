@@ -11,8 +11,8 @@ export default function Nav() {
   return (
     <header className="fixed inset-x-0 top-0 z-40 border-b border-bar-line bg-bar/85 backdrop-blur-md">
       <nav className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-8">
-        <a href="#top" className="text-sm font-semibold tracking-tight text-bar-ink">
-          James Tabron
+        <a href="#top" className="text-lg font-semibold tracking-tight text-bar-ink">
+          James Tabron's Portfolio
         </a>
         <div className="flex items-center gap-6">
           <div className="hidden items-center gap-6 sm:flex">
