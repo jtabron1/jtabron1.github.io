@@ -95,10 +95,22 @@ body {
 /*
   Z-index scale (Section 6.F): 40 nav, 50 modal, 60 grain overlay.
 
-  Option 1 ambient background: three faint accent washes behind the page,
-  plus a fixed film-grain overlay. Solid surface bands sit on top of the
-  washes so the warmth shows in the open sections.
+  Ambient background (washes + film grain) is DARK MODE ONLY. In light mode
+  low-alpha gradients dither into visible noise and grayscale grain reads as
+  dirt on white, so light mode gets a clean flat background instead.
 */
+.bg-washes,
+.grain {
+  display: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  .bg-washes,
+  .grain {
+    display: block;
+  }
+}
+
 .bg-washes {
   background:
     radial-gradient(60rem 42rem at 14% 0%, var(--wash-strong), transparent 62%),
