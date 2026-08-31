@@ -168,7 +168,7 @@ export default function Experience() {
           <div className="mt-6 grid gap-8 md:grid-cols-3">
             {earlierRoles.map((r) => (
               <div key={r.role + r.company} className="rounded-2xl bg-surface-tint p-6">
-                <p className="font-mono text-xs text-muted">{r.dates}</p>
+                <p className="font-mono text-base text-muted">{r.dates}</p>
                 <h4 className="mt-2 font-semibold tracking-tight">{r.role}</h4>
                 <p className="text-sm text-accent">{r.company}</p>
                 <p className="mt-3 leading-relaxed text-muted">{r.note}</p>
