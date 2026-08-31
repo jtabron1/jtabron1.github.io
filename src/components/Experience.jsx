@@ -116,7 +116,7 @@ export default function Experience() {
           {featuredRoles.map((r, i) => (
             <Reveal key={r.role + r.company} delay={i * 0.05}>
               <div className="grid gap-3 md:grid-cols-12 md:gap-8">
-                <p className="font-mono text-sm text-muted md:col-span-3 md:pt-1">{r.dates}</p>
+                <p className="font-mono text-xl text-muted md:col-span-3 md:pt-1">{r.dates}</p>
                 <div className="md:col-span-9">
                   <h3 className="text-xl font-semibold tracking-tight">
                     {r.role}
@@ -134,18 +134,18 @@ export default function Experience() {
                       onClick={() => openCaseStudy(r.caseStudy.id)}
                       className="group mt-5 block w-full max-w-[75ch] rounded-2xl border border-line bg-surface-tint p-6 text-left transition-all hover:-translate-y-1 hover:border-accent"
                     >
-                      <p className="font-semibold tracking-tight">{r.caseStudy.framing}</p>
+                      <p className="text-lg font-semibold tracking-tight">{r.caseStudy.framing}</p>
                       <div className="mt-4 grid gap-4 sm:grid-cols-3">
                         {r.caseStudy.metrics.map((m) => (
                           <div key={m.label}>
-                            <p className="font-mono text-xl font-medium tracking-tight text-accent">
+                            <p className="font-mono text-2xl font-medium tracking-tight text-accent">
                               {m.value}
                             </p>
-                            <p className="mt-1 text-xs leading-snug text-muted">{m.label}</p>
+                            <p className="mt-1 text-sm leading-snug text-muted">{m.label}</p>
                           </div>
                         ))}
                       </div>
-                      <span className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-accent">
+                      <span className="mt-5 inline-flex items-center gap-2 text-base font-semibold text-accent">
                         Read the case study
                         <ArrowUpRight
                           size={14}
