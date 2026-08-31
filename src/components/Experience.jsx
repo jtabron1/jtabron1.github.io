@@ -108,7 +108,7 @@ export default function Experience() {
       <div className="mx-auto max-w-7xl px-4 py-24 sm:px-8 md:py-32">
         <Reveal>
           <h2 className="max-w-[24ch] text-3xl font-semibold tracking-tighter md:text-5xl">
-            Twelve years across security, compliance, and engineering
+            Twelve years across GRC and engineering
           </h2>
         </Reveal>
 
