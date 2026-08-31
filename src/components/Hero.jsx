@@ -27,7 +27,7 @@ export default function Hero() {
             {...fadeUp(0.08)}
             className="mt-5 text-4xl font-semibold tracking-tighter text-balance md:text-6xl lg:text-7xl"
           >
-            Compliance, engineered like software.
+            GRC, engineered like software.
           </motion.h1>
           <motion.p
             {...fadeUp(0.16)}
