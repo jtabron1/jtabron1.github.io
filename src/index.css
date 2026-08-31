@@ -1,0 +1,114 @@
+@import "tailwindcss";
+
+/*
+  Token strategy: CSS variables, swapped under prefers-color-scheme (Section 8.A).
+  Shape system (documented rule, Section 4.4): buttons and interactive pills are
+  full-radius, panels and images are 16px (rounded-2xl), small tags are 6px.
+  Accent: single burnt orange, locked page-wide (Section 4.2).
+*/
+:root {
+  --bg: #fafafa;
+  --surface: #ffffff;
+  --surface-tint: #f4f4f5;
+  --ink: #18181b;
+  --muted: #52525b;
+  --line: #e4e4e7;
+  --accent: #b34e16; /* 5.2:1 on white, AA for text */
+  --accent-soft: rgb(179 78 22 / 0.08);
+  --on-accent: #fafafa;
+  /* Tonal depth scale: sections darken step by step down the page */
+  /* Inverted color-block (hero + stats): lighter burnt orange, dark ink */
+  --block: #e8834e;
+  --on-block: #1c1108;
+  --on-block-muted: #3a2412;
+  --block-line: rgb(28 17 8 / 0.18);
+  --tone-2: #f5f5f6;
+  --tone-3: #f0f0f2;
+  --tone-4: #ebebee;
+  --tone-5: #e6e6ea;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #09090b;
+    --surface: #131316;
+    --surface-tint: #1c1c20;
+    --ink: #f4f4f5;
+    --muted: #a1a1aa;
+    --line: #27272a;
+    --accent: #e8804a; /* 7:1 on zinc-950 */
+    --accent-soft: rgb(232 128 74 / 0.1);
+    --on-accent: #09090b;
+    --block: #d3703c;
+    --on-block: #180e05;
+    --on-block-muted: #34200f;
+    --block-line: rgb(24 14 5 / 0.22);
+    --wash-strong: rgb(232 128 74 / 0.06);
+    --wash-soft: rgb(232 128 74 / 0.035);
+    --grain-opacity: 0.05;
+    --tone-2: #0c0c0f;
+    --tone-3: #0f0f13;
+    --tone-4: #131317;
+    --tone-5: #17171c;
+  }
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-tint: var(--surface-tint);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-block: var(--block);
+  --color-on-block: var(--on-block);
+  --color-on-block-muted: var(--on-block-muted);
+  --color-block-line: var(--block-line);
+  --color-tone2: var(--tone-2);
+  --color-tone3: var(--tone-3);
+  --color-tone4: var(--tone-4);
+  --color-tone5: var(--tone-5);
+  --color-accent: var(--accent);
+  --color-accent-soft: var(--accent-soft);
+  --color-on-accent: var(--on-accent);
+  --font-sans: "Geist Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "Geist Mono Variable", ui-monospace, "SF Mono", monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+  Z-index scale (Section 6.F): 40 nav, 50 modal, 60 grain overlay.
+
+  Option 1 ambient background: three faint accent washes behind the page,
+  plus a fixed film-grain overlay. Solid surface bands sit on top of the
+  washes so the warmth shows in the open sections.
+*/
+.bg-washes {
+  background:
+    radial-gradient(60rem 42rem at 14% 0%, var(--wash-strong), transparent 62%),
+    radial-gradient(52rem 38rem at 90% 42%, var(--wash-soft), transparent 65%),
+    radial-gradient(56rem 40rem at 18% 100%, var(--wash-soft), transparent 65%);
+}
+
+/* Film grain: fixed + pointer-events-none per Section 6.E, tiled SVG noise. */
+.grain {
+  opacity: var(--grain-opacity);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size: 160px 160px;
+}

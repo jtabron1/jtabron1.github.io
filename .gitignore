@@ -1,0 +1,15 @@
+node_modules
+dist
+.DS_Store
+*.local
+
+# Local working material, not published with the site
+PortfolioDesignSKILL.md
+docs/
+JamesTabron_2026_Resume.pdf
+Headshot_Updated.jpeg
+RMISC_Talk_Pic.jpeg
+
+# Other local tooling
+.foundry/
+.claude/
