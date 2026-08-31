@@ -16,6 +16,12 @@
   --accent: #b34e16; /* 5.2:1 on white, AA for text */
   --accent-soft: rgb(179 78 22 / 0.08);
   --on-accent: #fafafa;
+  /* Nav bar: warm ink, the dark end of the accent family, same in both modes */
+  --bar: #201308;
+  --bar-ink: #f6efe8;
+  --bar-muted: rgb(246 239 232 / 0.66);
+  --bar-line: rgb(246 239 232 / 0.16);
+  --bar-accent: #e8804a;
   /* Tonal depth scale: sections darken step by step down the page */
   /* Inverted color-block (hero + stats): lighter burnt orange, dark ink */
   --block: #e8834e;
@@ -71,6 +77,11 @@
   --color-accent: var(--accent);
   --color-accent-soft: var(--accent-soft);
   --color-on-accent: var(--on-accent);
+  --color-bar: var(--bar);
+  --color-bar-ink: var(--bar-ink);
+  --color-bar-muted: var(--bar-muted);
+  --color-bar-line: var(--bar-line);
+  --color-bar-accent: var(--bar-accent);
   --font-sans: "Geist Variable", ui-sans-serif, system-ui, sans-serif;
   --font-mono: "Geist Mono Variable", ui-monospace, "SF Mono", monospace;
 }
