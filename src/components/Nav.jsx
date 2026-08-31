@@ -9,7 +9,7 @@ const links = [
 
 export default function Nav() {
   return (
-    <header className="fixed inset-x-0 top-0 z-40 border-b border-bar-line bg-bar/95 backdrop-blur-md">
+    <header className="fixed inset-x-0 top-0 z-40 border-b border-bar-line bg-bar/80 backdrop-blur-md">
       <nav className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-8">
         <a href="#top" className="text-sm font-semibold tracking-tight text-bar-ink">
           James Tabron
