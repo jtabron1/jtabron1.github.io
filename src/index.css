@@ -11,8 +11,8 @@
   --surface: #ffffff;
   --surface-tint: #f4f4f5;
   --ink: #18181b;
-  --muted: #52525b;
-  --line: #e4e4e7;
+  --muted: #47474f;
+  --line: #dcdce1;
   --accent: #b34e16; /* 5.2:1 on white, AA for text */
   --accent-soft: rgb(179 78 22 / 0.08);
   --on-accent: #fafafa;
