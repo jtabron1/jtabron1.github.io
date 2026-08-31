@@ -7,7 +7,7 @@ export default function Contact() {
       <div className="mx-auto max-w-7xl px-4 py-24 sm:px-8 md:py-32">
         <Reveal>
           <h2 className="max-w-[18ch] text-4xl font-semibold tracking-tighter md:text-6xl">
-            Let's build continuous compliance.
+            Let's build something amazing together.
           </h2>
           <p className="mt-5 max-w-[55ch] text-muted md:text-lg">
             Open to conversations about GRC engineering, compliance automation, and
